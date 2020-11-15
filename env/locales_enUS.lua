@@ -2253,6 +2253,7 @@ pfUI_locale["enUS"]["debuffs"] = {
   ['Spirit Decay']={[0]=1200.0,},
   ['Spirit of Zandalar']={[0]=7200.0,},
   ['Spitelash']={[0]=20.0,},
+  ['Starfall Stun']={[0]=4.0,}
   ['Starfire Stun']={[0]=3.0,},
   ['Starshards']={[0]=6.0,},
   ['Stasis Effect']={[0]=15.0,},
