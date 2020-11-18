@@ -14,7 +14,11 @@ Not all the listed changes have been tested yet.
 Use the Green Code Button to the top right and download the zip file. Extrace the file into your `wow/Interface/AddOns` folder and rename it to `pfUI` (remove the -master). If you already have pfUI installed overwrite the existing folder, saved configuations wont be affected by this.
 Note: at the moment the mod extension only works with the English Game Client.
 
-## Changelog (v.05)
+
+## Changelog (v.051)
+
+- cleaned up the code a bit
+- resolved an issue with Druids Mighty Roots talent not affecting the timer
 
 **Hunter:**
 - Aimed and Multi Shot show the correct cast times and are affected by the Snap Shot talent
