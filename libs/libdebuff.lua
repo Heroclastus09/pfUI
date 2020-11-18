@@ -42,23 +42,19 @@ function libdebuff:GetDuration(effect, rank)
 		if effect == L["dyndebuffs"]["Gouge"] then
 	       local _,_,_,_,countIG = GetTalentInfo(2,1)
 	       local _,_,_,_,countTC = GetTalentInfo(1,16)
-	       if (countIG and countIG == 0 and countTC and countTC > 0) then duration = duration + (countTC*.5)  end
-		   if (countIG and countIG > 0 and countTC and countTC == 0) then duration = duration + (countIG*.5)  end
-		   if (countIG and countIG > 0 and countTC and countTC > 0) then duration = duration + (countIG*.5) + (countTC*.5)  end
+	       duration = duration + (countIG and countIG*.5 or 0)
+		   duration = duration + (countTC and countTC*.5 or 0)
 	--  Rupture with Serrated Blades and Exhaustion
 		elseif effect == L["dyndebuffs"]["Rupture"] then
 		   local _,_,_,_,countSB = GetTalentInfo(3,13)
 		   local _,_,_,_,countEx = GetTalentInfo(1,6)
-		   if (countEx and countEx == 0 and  countSB and countSB == 0) then duration = (duration + GetComboPoints() * 2)  end
-		   if (countEx and countEx == 0 and  countSB and countSB > 0) then duration = (duration + GetComboPoints() * 2) + (countSB*2)  end
-		   if (countEx and countEx == 1 and  countSB and countSB == 0) then duration = (duration + GetComboPoints() * 2) * 1.25  end
-		   if (countEx and countEx == 1 and  countSB and countSB > 0) then duration = (duration + GetComboPoints() * 2) * 1.25 + (countSB*2) end
-		   if (countEx and countEx == 2 and  countSB and countSB == 0) then duration = (duration + GetComboPoints() * 2) * 1.5 end
+		   duration = duration + GetComboPoints()*2
+		   duration = duration + (countEx and duration*(countEx*.25) or 0)
+		   duration = duration + (countSB and countSB*2 or 0)
 	--  Garotte with Serrated Blades 
 		elseif effect == L["dyndebuffs"]["Garrote"] then
 		   local _,_,_,_,countSB = GetTalentInfo(3,13)
 		   if countSB and countSB > 1 then duration = duration + 2*countSB end
-		   if (countEx and countEx == 2 and  countSB and countSB > 0) then duration = (duration + GetComboPoints() * 2) * 1.5 + (countSB*2)end
 	--  Total Control for Kidney Shot(1,16)
 		elseif effect == L["dyndebuffs"]["Kidney Shot"] then
 		   local _,_,_,_,countTC = GetTalentInfo(1,16)
