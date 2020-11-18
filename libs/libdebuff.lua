@@ -123,17 +123,17 @@ function libdebuff:GetDuration(effect, rank)
 		end  
 	--DRUID
 	elseif class == "DRUID" then
-	--	Power of Nature
-		if effect == L["dyndebuffs"]["Moonfire"] or L["dyndebuffs"]["Insect Swarm"] or L["dyndebuffs"]["Soothe Animal"]or L["dyndebuffs"]["Faerie Fire"] or L["dyndebuffs"]["Hibernate"]then
-		   local _,_,_,_,countPON = GetTalentInfo(1,12)
-		   if countPON and countPON == 1 then duration = duration*1.25 end
-		   if countPON and countPON == 2 then duration = duration*1.5 end
 	--	Mighty Roots
-		elseif effect == L["dyndebuffs"]["Entangling Roots"] then
+		if effect == L["dyndebuffs"]["Entangling Roots"] then
 			local _,_,_,_,countMR = GetTalentInfo(1,4)
 			if countMR and countMR == 1 then duration = duration*1.4 end
 			if countMR and countMR == 1 then duration = duration*1.7 end
 			if countMR and countMR == 1 then duration = duration*2.0 end
+	--	Power of Nature
+		elseif effect == L["dyndebuffs"]["Moonfire"] or L["dyndebuffs"]["Insect Swarm"] or L["dyndebuffs"]["Soothe Animal"]or L["dyndebuffs"]["Faerie Fire"] or L["dyndebuffs"]["Hibernate"]then
+		   local _,_,_,_,countPON = GetTalentInfo(1,12)
+		   if countPON and countPON == 1 then duration = duration*1.25 end
+		   if countPON and countPON == 2 then duration = duration*1.5 end
 		end 
 	--PALADIN
 	elseif class == "PALADIN" then
