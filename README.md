@@ -14,11 +14,18 @@ Not all the listed changes have been tested yet.
 Use the Green Code Button to the top right and download the zip file. Extrace the file into your `wow/Interface/AddOns` folder and rename it to `pfUI` (remove the -master). If you already have pfUI installed overwrite the existing folder, saved configuations wont be affected by this.
 Note: at the moment the mod extension only works with the English Game Client.
 
-
-## Changelog (v.051)
+## Changelog (v 0.51)
 
 - cleaned up the code a bit
-- resolved an issue with Druids Mighty Roots talent not affecting the timer
+- resolved issue with Mighty Roots talent not working
+- corrected some Shaman totem timers
+
+## Changelog (v 0.5)
+
+- first upload with cast time and debuff time corrections
+
+
+## Changelog (Summary)
 
 **Hunter:**
 - Aimed and Multi Shot show the correct cast times and are affected by the Snap Shot talent
@@ -50,10 +57,10 @@ Note: at the moment the mod extension only works with the English Game Client.
 - Permafrost should correctly increase Frostbolts debuff duration, Frostbolt baseline debuff times corrected
 
 **Shaman:**
-- nothing yet
+- corrected a few totem durations
 
 ## Plans (to-do):
-- adding the custom V+ spells into the library that show the correct times then
+- adding the custom V+ spells into the library that then show the correct times 
 
 ## Known Issues:
 - for some reason Frostbolts first cast always shows the wrong duration (e.g. 6s debuff although it should be 7 seconds, subsequent casts show correctly), sometimes the debuff doesnt register at all
