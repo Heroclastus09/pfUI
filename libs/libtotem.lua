@@ -45,13 +45,13 @@ local totems = {
     --Earthbind Totem (Earth)
     ["Spell_Nature_StrengthOfEarthTotem02"] = {[-1] = 45},
     --Stoneclaw Totem (Earth)
-    ["Spell_Nature_StoneClawTotem"] = {[-1] = 15},
+    ["Spell_Nature_StoneClawTotem"] = {[-1] = 20},
     --Stoneskin Totem (Earth)
     ["Spell_Nature_StoneSkinTotem"] = {[-1] = 120},
     --Strength of Earth Totem (Earth)
     ["Spell_Nature_EarthBindTotem"] = {[-1] = 120},
     --Tremor Totem (Earth)
-    ["Spell_Nature_TremorTotem"] = {[-1] = 120},
+    ["Spell_Nature_TremorTotem"] = {[-1] = 20},
   },
   [WATER_TOTEM_SLOT] = {
     -- Disease Cleansing Totem (Water)
@@ -59,11 +59,11 @@ local totems = {
     --Fire Resistance Totem (Water)
     ["Spell_FireResistanceTotem_01"] = {[-1] = 120},
     --Healing Stream Totem (Water)
-    ["INV_Spear_04"] = {[-1] = 60},
+    ["INV_Spear_04"] = {[-1] = 300},
     --Mana Spring Totem (Water)
-    ["Spell_Nature_ManaRegenTotem"] = {[-1] = 60},
+    ["Spell_Nature_ManaRegenTotem"] = {[-1] = 300},
     --Mana Tide Totem (Water)
-    ["Spell_Frost_SummonWaterElemental"] = {[-1] = 12},
+    ["Spell_Frost_SummonWaterElemental"] = {[-1] = 15},
     --Poison Cleansing Totem (Water)
     ["Spell_Nature_PoisonCleansingTotem"] = {[-1] = 120},
   },
@@ -71,7 +71,7 @@ local totems = {
     --Grace of Air Totem (Air)
     ["Spell_Nature_InvisibilityTotem"] = {[-1] = 120},
     --Grounding Totem (Air)
-    ["Spell_Nature_GroundingTotem"] = {[-1] = 45},
+    ["Spell_Nature_GroundingTotem"] = {[-1] = 40},
     --Nature Resistance Totem (Air)
     ["Spell_Nature_NatureResistanceTotem"] = {[-1] = 120},
     --Tranquil Air Totem (Air)
