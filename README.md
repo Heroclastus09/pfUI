@@ -44,7 +44,7 @@ Note: at the moment the mod extension only works with the English Game Client.
 - Prolonged Misery and Jinx should correctly increase the associated Curses duration, base Curse duration corrected
 
 **Priest:**
-- Midflay debuff time corrected
+- Mindflay debuff time corrected
 - Shadow Word Pain should display correct in relation to Improved Shadow Word Pain talent
 
 **Paladin:**
